@@ -69,7 +69,7 @@ button:hover {
 #line {
     width: 680px;
     height: 85px;
-    background-image: url('/assets/tiles/board.png');
+    background-image: url('https://mnrva-dev.github.io/gui1-hw5/assets/tiles/board.png');
     background-size: contain;
     display: flex;
 }
