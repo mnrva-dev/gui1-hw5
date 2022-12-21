@@ -43,8 +43,10 @@ $('.drop').droppable({
         });
         // make the spot the tile rests on undroppable
         $(this).droppable('disable')
-        // place the tile programatically
-        place(tile, posToTile(ui.draggable.position().left))
+        // place the tile in memory after waiting for animation to fix position
+        // the position is determined by finding the distance between the tile's offset and
+        // the offset of the container (unchanging)
+        setTimeout(place(tile, posToTile(ui.draggable.offset().left - $('#container').offset().left)), 100)
     },
 })
 
@@ -90,7 +92,8 @@ function place(letter, pos) {
 
 // determines the spot the tile was placed based on position
 function posToTile(pos) {
-    pos = pos - 400
+    pos = pos - 200
+    console.log(Math.floor(pos / 85))
     return Math.floor(pos / 85)
 }
 
