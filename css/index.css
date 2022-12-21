@@ -1,0 +1,80 @@
+/* author: gabe farrell */
+/* get fonts */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&family=Secular+One&display=swap');
+
+/* set fonts and text colors */
+body {
+    font-family: 'Readex Pro', sans-serif;
+    color: #F6F7F8;
+    background-color: #010b14;
+}
+h1 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    color: #F6F7F8;
+}
+
+/* center class makes it a bit easier to center things */
+.center {
+    margin:auto;
+    text-align: center;
+}
+
+/* contains all the content of the page, except the header */
+#container {
+    width: 1100px;
+    background-color: #011627;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+/* style the buttons to match the theme of the app */
+button {
+    padding: 10px;
+    color: #F6F7F8;
+    background-color: #011627;
+    border-radius: 10px;
+    border: 3px solid #F6F7F8;
+    margin: 10px auto;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+button:hover {
+    border: 3px solid #c5c6c6;
+    color: #c5c6c6;
+    cursor: pointer;
+}
+
+/* for when the word is not real */
+.error {
+    color: #FF3366;
+}
+
+/* give the tile hand a lighter bg, and size them as needed */
+#tiles {
+    background-color: #1d3f5a;
+    padding: 10px;
+    border-radius: 15px;
+    width: 520px;
+    margin: 10px auto;
+    display: flex;
+}
+.tile {
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+}
+
+/* the style rules for the line of the game board */
+#line {
+    width: 680px;
+    height: 85px;
+    background-image: url('/assets/tiles/board.png');
+    background-size: contain;
+    display: flex;
+}
+/* the size of the drop area for the tiles */
+.drop {
+    width: 85px;
+    height: 85px;
+}

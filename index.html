@@ -1,0 +1,60 @@
+<!-- author: gabe farrell -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- get stylesheets -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tiles.css">
+    <!-- get jquery scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <title>Scrabble!</title>
+</head>
+<body>
+    <h1>Scrabble!</h1>
+    <!-- contains all app content -->
+    <div id="container" class="center">
+        <!-- contains game state info -->
+        <div id="info">
+            <p id="topscore">Best Word: --- (0)</p>
+            <p id="score">Score: 0</p>
+            <p id="word">--- (0)</p>
+        </div>
+        <!-- buttons to interact with the game -->
+        <div id="controls">
+            <button id="submit">Submit Word</button>
+            <button id="clear">Clear Tiles</button>
+            <button id="reset">Start Over</button>
+        </div>
+        <!-- contains the play area and tiles -->
+        <div id="board" class="center">
+            <!-- line of the game board, each drop area has class 'drop' -->
+            <div id="line" class="center">
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+            </div>
+            <div id="tiles">
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+            </div>
+        </div>
+    </div>
+    <!-- need to import our script as module so we can use other js files -->
+    <script type="module" src="js/ui.js"></script>
+</body>
+</html>
